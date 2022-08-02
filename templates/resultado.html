@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <title>
+        {{ titulo }}
+    </title>
+</head>
+
+<body>
+    <p> Arquivo: {{ nome_arquivo }}</p>
+    <h2> TRANSCRIÇÃO</h2>
+    <p> {{ texto }}</p>
+
+    <div class="text-center word-cloud">
+        <figure class="figure img-fluid">
+            <img src= {{ url_for('static', filename='wordcloud.png') }} class="figure-img img-fluid rounded" >
+        </figure>
+        </div>
+        <style>
+            body{ 
+                 margin-top: 4%;
+                 background-attachment: fixed;
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                }
+        </style>
+</body>
+
+</html>
